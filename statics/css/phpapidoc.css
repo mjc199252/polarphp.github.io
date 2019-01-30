@@ -1,0 +1,683 @@
+@charset "UTF-8";
+/** 修改默认的uikit变量 */
+body {
+  background-color: #FAFAFA !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gotham Rounded", "微软雅黑", -apple-system, BlinkMacSystemFont, "宋体", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important; }
+
+.phpapidoc-page-container {
+  max-width: 1300px;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  padding: 0 !important;
+  /** doxygen标签一些样式 */ }
+  .phpapidoc-page-container .title {
+    font-family: "Gotham Rounded", "微软雅黑", -apple-system, BlinkMacSystemFont, "宋体", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  @media (min-width: 640px) {
+    .phpapidoc-page-container {
+      margin-top: 30px !important;
+      margin-bottom: 30px !important; } }
+  @media (min-width: 960px) {
+    .phpapidoc-page-container {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+      margin-top: 40px !important;
+      margin-bottom: 40px !important; } }
+  .phpapidoc-page-container .side-panel-container {
+    width: 200px;
+    margin-right: 30px; }
+  .phpapidoc-page-container dl {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .phpapidoc-page-container dl.deprecated {
+    margin-left: -7px;
+    padding-left: 10px;
+    border-left: 4px solid;
+    border-color: #505050; }
+  .phpapidoc-page-container dl.pre, .phpapidoc-page-container dl.post, .phpapidoc-page-container dl.invariant {
+    margin-left: -7px;
+    padding-left: 10px;
+    border-left: 4px solid;
+    border-color: #00D000; }
+  .phpapidoc-page-container dl.bug {
+    margin-left: -7px;
+    padding-left: 10px;
+    border-left: 4px solid;
+    border-color: #C08050; }
+  .phpapidoc-page-container dl.warning, .phpapidoc-page-container dl.attention {
+    margin-left: -7px;
+    padding-left: 10px;
+    border-left: 4px solid;
+    border-color: #FF0000; }
+  .phpapidoc-page-container dl.note {
+    margin-left: -7px;
+    padding-left: 10px;
+    border-left: 4px solid;
+    border-color: #D0C000; }
+
+.phpapidoc-info-container {
+  background-color: #ffffff;
+  padding: 20px; }
+  @media (min-width: 640px) {
+    .phpapidoc-info-container {
+      padding: 30px; } }
+  .phpapidoc-info-container .title {
+    padding-top: 0;
+    margin-bottom: 30px !important; }
+  .phpapidoc-info-container .detail-description ul {
+    list-style-type: disc !important; }
+  .phpapidoc-info-container .detail-description ol {
+    list-style-type: decimal !important; }
+  .phpapidoc-info-container .detail-description li {
+    list-style-type: inherit !important; }
+  .phpapidoc-info-container .detail-description h1, .phpapidoc-info-container .detail-description h2, .phpapidoc-info-container .detail-description h3, .phpapidoc-info-container .detail-description h4, .phpapidoc-info-container .detail-description h5, .phpapidoc-info-container .detail-description h6, .phpapidoc-info-container .detail-description p, .phpapidoc-info-container .detail-description blockquote {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 180% !important; }
+  .phpapidoc-info-container .detail-description blockquote {
+    font-size: 1em !important;
+    border-left: 5px solid #EEEEEE;
+    padding: 5px 10px !important;
+    margin: 0 0 10px !important;
+    /* 1 */
+    overflow-wrap: break-word;
+    /* 2 */
+    word-wrap: break-word;
+    /* 3 */
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    font-size: 1.2em; }
+    @media (min-width: 640px) {
+      .phpapidoc-info-container .detail-description blockquote {
+        border-left: 10px solid #EEEEEE;
+        padding: 10px 20px !important;
+        margin: 0 0 20px !important; } }
+  .phpapidoc-info-container .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
+    margin: 0 5px;
+    content: "\\"; }
+  .phpapidoc-info-container .nav-path {
+    margin: 0 !important;
+    padding: 0 !important; }
+    .phpapidoc-info-container .nav-path div {
+      height: 35px;
+      line-height: 35px;
+      margin-right: 5px; }
+    .phpapidoc-info-container .nav-path ul {
+      height: 40px;
+      line-height: 40px;
+      margin: 0;
+      padding: 0; }
+    @media (min-width: 640px) {
+      .phpapidoc-info-container .nav-path {
+        margin-bottom: 15px !important; } }
+  .phpapidoc-info-container .nav-path-grid {
+    margin-bottom: 10px; }
+    .phpapidoc-info-container .nav-path-grid div {
+      height: 20px;
+      line-height: 20px; }
+      .phpapidoc-info-container .nav-path-grid div a {
+        margin-left: 2px; }
+  .phpapidoc-info-container .tags-container .uk-label {
+    height: 16px !important;
+    line-height: 17px !important;
+    font-size: 10px !important;
+    margin-right: 5px !important; }
+    .phpapidoc-info-container .tags-container .uk-label a {
+      color: #ffffff; }
+      .phpapidoc-info-container .tags-container .uk-label a:hover {
+        text-decoration: underline; }
+
+.phpapidoc-container {
+  min-height: 600px; }
+
+.phpapidoc-index-info-container .title {
+  height: 40px;
+  line-height: 40px; }
+  .phpapidoc-index-info-container .title h2, .phpapidoc-index-info-container .title h3 {
+    display: inline;
+    margin-left: 10px; }
+  .phpapidoc-index-info-container .title img {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px; }
+
+.phpapidoc-index-info-container a {
+  font-size: 1.2em; }
+
+@media (min-width: 640px) {
+  .phpapidoc-index-info-container li {
+    padding-bottom: 3px; } }
+
+.phpapidoc-index-info-container ul {
+  margin: 0;
+  padding: 0; }
+
+.phpapidoc-globals-info-container a {
+  font-size: 1.1em; }
+
+.phpapidoc-globals-info-container .title {
+  margin: 0 !important;
+  padding: 0 !important; }
+  @media (min-width: 640px) {
+    .phpapidoc-globals-info-container .title {
+      margin-top: 15px !important; } }
+
+.phpapidoc-globals-info-container .uk-grid {
+  border-bottom: 1px solid #e5e5e5 !important; }
+
+.phpapidoc-classes-info-container .title {
+  height: 40px;
+  line-height: 40px; }
+  .phpapidoc-classes-info-container .title h2 {
+    display: inline;
+    margin-left: 10px; }
+  .phpapidoc-classes-info-container .title img {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px; }
+
+.phpapidoc-classes-info-container a {
+  font-size: 1.2em; }
+
+@media (min-width: 640px) {
+  .phpapidoc-classes-info-container li {
+    padding-bottom: 3px; } }
+
+.phpapidoc-classes-info-container ul {
+  margin: 0;
+  padding: 0; }
+
+.phpapidoc-functions-info-container .title {
+  height: 40px;
+  line-height: 40px; }
+  .phpapidoc-functions-info-container .title h2 {
+    display: inline;
+    margin-left: 10px; }
+  .phpapidoc-functions-info-container .title img {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px; }
+
+.phpapidoc-functions-info-container a {
+  font-size: 1.2em; }
+
+@media (min-width: 640px) {
+  .phpapidoc-functions-info-container li {
+    padding-bottom: 3px; } }
+
+.phpapidoc-functions-info-container ul {
+  margin: 0;
+  padding: 0; }
+
+.phpapidoc-interfaces-info-container .title {
+  height: 40px;
+  line-height: 40px; }
+  .phpapidoc-interfaces-info-container .title h2 {
+    display: inline;
+    margin-left: 10px; }
+  .phpapidoc-interfaces-info-container .title img {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px; }
+
+.phpapidoc-interfaces-info-container a {
+  font-size: 1.2em; }
+
+@media (min-width: 640px) {
+  .phpapidoc-interfaces-info-container li {
+    padding-bottom: 3px; } }
+
+.phpapidoc-interfaces-info-container ul {
+  margin: 0;
+  padding: 0; }
+
+.phpapidoc-modules-info-container .uk-grid {
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding-bottom: 5px;
+  margin-left: 3px; }
+
+.phpapidoc-modules-info-container .list-item a, .phpapidoc-modules-info-container .list-item span {
+  font-size: 1.2em;
+  font-family: "Gotham Rounded", "微软雅黑", -apple-system, BlinkMacSystemFont, "宋体", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.phpapidoc-modules-info-container .list-item span {
+  font-size: 1em; }
+
+.phpapidoc-namespaces-info-container .title {
+  height: 40px;
+  line-height: 40px; }
+  .phpapidoc-namespaces-info-container .title h3 {
+    display: inline;
+    margin-left: 10px; }
+  .phpapidoc-namespaces-info-container .title img {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px; }
+
+.phpapidoc-namespaces-info-container .uk-grid {
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding-bottom: 5px;
+  margin-left: 3px; }
+
+.phpapidoc-namespaces-info-container .list-item a, .phpapidoc-namespaces-info-container .list-item span {
+  font-size: 1.2em;
+  font-family: "Gotham Rounded", "微软雅黑", -apple-system, BlinkMacSystemFont, "宋体", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.phpapidoc-namespaces-info-container .list-item span {
+  font-size: 1em; }
+
+.phpapidoc-traits-info-container .title {
+  height: 40px;
+  line-height: 40px; }
+  .phpapidoc-traits-info-container .title h2 {
+    display: inline;
+    margin-left: 10px; }
+  .phpapidoc-traits-info-container .title img {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px; }
+
+.phpapidoc-traits-info-container a {
+  font-size: 1.2em; }
+
+@media (min-width: 640px) {
+  .phpapidoc-traits-info-container li {
+    padding-bottom: 3px; } }
+
+.phpapidoc-traits-info-container ul {
+  margin: 0;
+  padding: 0; }
+
+.section-item-container .uk-grid-small > * {
+  padding-left: 1px !important;
+  padding-right: 1px !important; }
+
+.section-item-container .section-title {
+  height: 35px;
+  line-height: 35px; }
+
+.section-item-container .uk-grid {
+  padding-bottom: 5px;
+  margin-left: 3px; }
+
+.section-item-container .tags {
+  line-height: 30px;
+  height: 30px; }
+  .section-item-container .tags span {
+    margin-top: 7px; }
+
+.section-item-container .list-item a {
+  font-size: 1.1em;
+  font-family: "Gotham Rounded", "微软雅黑", -apple-system, BlinkMacSystemFont, "宋体", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.section-item-container .list-item span {
+  font-size: 1em; }
+
+.section-info-item-container .section-item-name a, .section-info-item-container .section-item-name span, .class-info-section-item-container .section-item-name a, .class-info-section-item-container .section-item-name span {
+  height: 30px;
+  line-height: 30px; }
+
+.section-info-item-container .section-item-name span, .class-info-section-item-container .section-item-name span {
+  font-size: 1.5em; }
+
+.section-info-item-container .section-item-name img, .class-info-section-item-container .section-item-name img {
+  margin-top: -4px;
+  margin-right: 3px; }
+
+.section-info-item-container a, .class-info-section-item-container a {
+  font-size: 1.1em;
+  font-family: "Gotham Rounded", "微软雅黑", -apple-system, BlinkMacSystemFont, "宋体", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.section-info-item-container span, .class-info-section-item-container span {
+  font-size: 1em; }
+
+.section-info-item-container .uk-grid-small > *, .class-info-section-item-container .uk-grid-small > * {
+  padding-left: 1px !important;
+  padding-right: 1px !important; }
+
+.phpapidoc-class-content-info-container a {
+  font-size: 1.1em; }
+
+.phpapidoc-class-content-info-container .title {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.phpapidoc-class-content-info-container .implements-section-item-container .list-item {
+  margin-top: 0; }
+
+.phpapidoc-class-content-info-container .implements-section-item-container .uk-grid-margin {
+  margin-top: 5px; }
+
+.phpapidoc-class-content-info-container .traits-section-item-container .list-item {
+  margin-top: 0; }
+
+.phpapidoc-class-content-info-container .traits-section-item-container .uk-grid-margin {
+  margin-top: 5px; }
+
+.phpapidoc-interface-content-info-container a {
+  font-size: 1.1em; }
+
+.phpapidoc-interface-content-info-container .title {
+  margin: 0 !important;
+  padding: 0 !important; }
+  @media (min-width: 640px) {
+    .phpapidoc-interface-content-info-container .title {
+      margin-top: 5px !important; } }
+
+.phpapidoc-interface-content-info-container .implements-section-item-container .uk-grid-margin {
+  margin-top: 5px; }
+
+.phpapidoc-module-content-info-container .title {
+  margin: 0 !important;
+  padding: 0 !important; }
+  @media (min-width: 640px) {
+    .phpapidoc-module-content-info-container .title {
+      margin-top: 15px !important; } }
+
+.phpapidoc-module-content-info-container .uk-grid {
+  border-bottom: 1px solid #e5e5e5 !important; }
+
+.phpapidoc-namespace-content-info-container .title {
+  margin: 0 !important;
+  padding: 0 !important; }
+  @media (min-width: 640px) {
+    .phpapidoc-namespace-content-info-container .title {
+      margin-top: 15px !important; } }
+
+.phpapidoc-namespace-content-info-container .class-section-container .uk-grid {
+  border-bottom: 1px solid #e5e5e5 !important; }
+
+.phpapidoc-namespace-content-info-container .namespace-section-container .uk-grid {
+  border-bottom: 1px solid #e5e5e5 !important; }
+
+.phpapidoc-function-content-info-container .title {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.phpapidoc-function-content-info-container .parameter-container {
+  padding-bottom: 20px; }
+  .phpapidoc-function-content-info-container .parameter-container .uk-label {
+    text-transform: none; }
+  .phpapidoc-function-content-info-container .parameter-container .property-name {
+    color: #d71718; }
+  .phpapidoc-function-content-info-container .parameter-container .description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #e5e5e5; }
+
+.side-panel {
+  width: 200px;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .side-panel li {
+    line-height: 30px;
+    height: 30px; }
+    .side-panel li a {
+      font-size: 1.2em;
+      display: inline-block; }
+    .side-panel li img {
+      height: 16px;
+      width: 16px;
+      margin-top: -5px;
+      margin-right: 5px;
+      margin-left: 20px; }
+  .side-panel .active-item {
+    color: #AE508D; }
+
+.doxygen-info {
+  color: #b2b2b2;
+  text-align: center;
+  margin-top: 40px; }
+  @media (min-width: 640px) {
+    .doxygen-info {
+      text-align: left; } }
+
+/**
+ * namespace section style
+ */
+.namespace-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .namespace-section-container {
+      margin-top: 40px; } }
+  .namespace-section-container a {
+    font-size: 1.2em; }
+  .namespace-section-container .uk-grid-small > * {
+    padding-left: 1px !important;
+    padding-right: 1px !important; }
+
+/**
+ * class section style
+ */
+.class-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-section-container {
+      margin-top: 40px; } }
+  .class-section-container .entity-type {
+    font-size: 1.2em;
+    padding-right: 10px; }
+
+/**
+ * interface section style
+ */
+.interface-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .interface-section-container {
+      margin-top: 40px; } }
+  .interface-section-container .entity-type {
+    font-size: 1.2em;
+    padding-right: 10px; }
+
+/**
+ * trait section style
+ */
+.trait-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .trait-section-container {
+      margin-top: 40px; } }
+  .trait-section-container .entity-type {
+    font-size: 1.2em;
+    padding-right: 10px; }
+
+/**
+ * func section style
+ */
+.func-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .func-section-container {
+      margin-top: 40px; } }
+  .func-section-container .signature {
+    margin-top: 0 !important; }
+
+/**
+ * const section style
+ */
+.const-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .const-section-container {
+      margin-top: 40px; } }
+  .const-section-container .list-item .define {
+    margin-left: 20px; }
+    .const-section-container .list-item .define a, .const-section-container .list-item .define span {
+      height: 23px;
+      line-height: 23px; }
+
+/**
+ * module section style
+ */
+.module-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .module-section-container {
+      margin-top: 40px; } }
+  .module-section-container .define {
+    font-size: 1em;
+    margin-top: 5px !important; }
+    .module-section-container .define a {
+      font-size: 1.2em; }
+
+/**
+ * class sections style
+ */
+.class-const-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-const-section-container {
+      margin-top: 40px; } }
+  .class-const-section-container .const-define {
+    margin-left: 20px; }
+    .class-const-section-container .const-define a, .class-const-section-container .const-define span {
+      height: 23px;
+      line-height: 23px; }
+  .class-const-section-container .uk-grid-small {
+    margin-top: 0; }
+  .class-const-section-container .constant-name {
+    margin-top: 5px; }
+
+.class-method-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-method-section-container {
+      margin-top: 40px; } }
+  .class-method-section-container .list-item {
+    margin-top: 0; }
+    .class-method-section-container .list-item .signature {
+      margin-top: 0; }
+      .class-method-section-container .list-item .signature a, .class-method-section-container .list-item .signature span {
+        height: 23px;
+        line-height: 23px;
+        display: inline-block; }
+      .class-method-section-container .list-item .signature .return-type a {
+        color: #1e87f0 !important;
+        margin-top: 1px; }
+        .class-method-section-container .list-item .signature .return-type a:hover {
+          color: #AE508D !important; }
+
+.class-property-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-property-section-container {
+      margin-top: 40px; } }
+  .class-property-section-container .property-define {
+    margin-left: 20px; }
+    .class-property-section-container .property-define a, .class-property-section-container .property-define span {
+      height: 23px;
+      line-height: 23px; }
+  .class-property-section-container .propertyant-name, .class-property-section-container .uk-grid-margin {
+    margin-top: 0 !important; }
+
+.class-trait-property-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-trait-property-section-container {
+      margin-top: 40px; } }
+  .class-trait-property-section-container .property-define {
+    margin-left: 20px; }
+    .class-trait-property-section-container .property-define a, .class-trait-property-section-container .property-define span {
+      height: 23px;
+      line-height: 23px; }
+  .class-trait-property-section-container .property-name {
+    margin-top: 0; }
+  .class-trait-property-section-container .from-trait-head {
+    margin-bottom: 10px;
+    margin-top: 20px; }
+  .class-trait-property-section-container .list-item {
+    margin-top: 0 !important; }
+
+.class-trait-method-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-trait-method-section-container {
+      margin-top: 40px; } }
+  .class-trait-method-section-container .list-item {
+    margin-top: 0; }
+    .class-trait-method-section-container .list-item .signature {
+      margin-top: 0; }
+      .class-trait-method-section-container .list-item .signature a, .class-trait-method-section-container .list-item .signature span {
+        height: 23px;
+        line-height: 23px;
+        display: inline-block; }
+      .class-trait-method-section-container .list-item .signature .return-type a {
+        color: #1e87f0 !important;
+        margin-top: 1px; }
+        .class-trait-method-section-container .list-item .signature .return-type a:hover {
+          color: #AE508D !important; }
+  .class-trait-method-section-container .from-trait-head {
+    margin-bottom: 10px;
+    margin-top: 20px; }
+
+.class-const-info-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-const-info-section-container {
+      margin-top: 40px; } }
+  .class-const-info-section-container .const-define {
+    margin-left: 20px; }
+    .class-const-info-section-container .const-define a, .class-const-info-section-container .const-define span {
+      height: 23px;
+      line-height: 23px; }
+  .class-const-info-section-container .constant-name {
+    margin-top: 5px;
+    font-size: 1.4em; }
+  .class-const-info-section-container .defined-file-location {
+    margin-top: 0 !important; }
+
+.class-property-info-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-property-info-section-container {
+      margin-top: 40px; } }
+  .class-property-info-section-container .property-define {
+    margin-left: 20px; }
+    .class-property-info-section-container .property-define a, .class-property-info-section-container .property-define span {
+      height: 23px;
+      line-height: 23px; }
+  .class-property-info-section-container .property-name, .class-property-info-section-container .uk-grid-margin {
+    margin-top: 0 !important; }
+  .class-property-info-section-container .property-name {
+    font-size: 1.4em; }
+  .class-property-info-section-container .defined-file-location {
+    margin-top: 0 !important; }
+
+.class-method-info-section-container {
+  margin-top: 20px; }
+  @media (min-width: 640px) {
+    .class-method-info-section-container {
+      margin-top: 40px; } }
+  .class-method-info-section-container .method-name {
+    font-size: 1.4em; }
+  .class-method-info-section-container .signature {
+    margin-top: 10px;
+    background: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 8px; }
+  .class-method-info-section-container .defined-file-location {
+    margin-top: 0 !important; }
+  .class-method-info-section-container .list-item {
+    margin-bottom: 20px; }
+  .class-method-info-section-container .return-info-container h6 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0; }
+  .class-method-info-section-container .parameter-item .param-text {
+    font-size: 1.2em; }
+  .class-method-info-section-container .parameter-item .description {
+    font-size: 1em; }

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/** 修改默认的uikit变量 */
+body {
+  background-color: #FAFAFA !important; }
+
+.team-page-container {
+  max-width: 960px;
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+  margin-top: 20px !important; }
+  @media (min-width: 640px) {
+    .team-page-container {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+      margin-bottom: 40px !important; } }
+
+.team-container {
+  min-height: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 20px; }
+  @media (min-width: 640px) {
+    .team-container {
+      padding: 40px; } }
+  .team-container li {
+    list-style-type: square; }
+  .team-container .uk-heading-line {
+    font-family: "Gotham Rounded", "微软雅黑", -apple-system, BlinkMacSystemFont, "宋体", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  @media (min-width: 640px) {
+    .team-container .team-section-wrapper p.desc {
+      padding-bottom: 30px; } }
+  .team-container .team-section-wrapper .team-section-item {
+    font-size: 0.9em; }
+    .team-container .team-section-wrapper .team-section-item .avatar {
+      display: block;
+      border: 2px solid #8794BC;
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      padding: 3px;
+      opacity: 1;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+      cursor: pointer;
+      float: left; }
+      .team-container .team-section-wrapper .team-section-item .avatar:hover {
+        opacity: 0.6;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        -webkit-transition-property: opacity;
+        transition-property: opacity; }
+    .team-container .team-section-wrapper .team-section-item .info {
+      float: left; }
+      .team-container .team-section-wrapper .team-section-item .info .info-item {
+        margin-bottom: 3px;
+        height: 25px;
+        line-height: 25px; }
+      .team-container .team-section-wrapper .team-section-item .info .info-icon {
+        height: 20px;
+        width: 20px;
+        margin-top: -5px; }
+      .team-container .team-section-wrapper .team-section-item .info .social-media-icon {
+        height: 20px;
+        width: 20px;
+        float: left;
+        margin-left: 5px; }
+  .team-container .welcome-contributor {
+    margin-bottom: 20px; }
+    .team-container .welcome-contributor .info-item {
+      height: 30px;
+      line-height: 30px; }
+      .team-container .welcome-contributor .info-item span {
+        display: inline-block;
+        float: left; }
+      .team-container .welcome-contributor .info-item img {
+        display: inline-block;
+        float: left;
+        margin-top: -3px;
+        margin-right: 5px; }
+  @media (min-width: 640px) {
+    .team-container .uk-divider-icon {
+      margin-top: 60px;
+      margin-bottom: 60px; } }

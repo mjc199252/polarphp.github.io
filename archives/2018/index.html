@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="ZZU_SOFTBOY">
+<meta name="description" content="polarphp - The fundamental runtime framework of php language">
+<meta name="keywords" content="polarphp, php, framework, web, artisans, ZZU_SOFTBOY, runtime framework, native library">
+<title></title>
+<link rel="icon" href="/polarphp.ico" type="image/ico">
+<link rel="stylesheet" href="/statics/js/uikit/css/uikit.min.css">
+<link rel="stylesheet" href="/statics/css/base.css">
+
+<script type="text/javascript" src="/statics/js/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/statics/js/uikit/js/uikit.min.js"></script>
+<script type="text/javascript" src="/statics/js/uikit/js/uikit-icons.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    
+<header id="header-wrapper" class="uk-container uk-margin-remove uk-container-expand site-header" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+    <nav class="uk-navbar-container uk-margin-remove" uk-navbar="offset:-2;">
+        <div class="uk-navbar-left">
+            <div class="logo">
+                <a href="/" class="logo-img"><img src="/statics/images/polarphp-white.svg"></a>
+            </div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                
+                <li>
+                    
+                    <a href="/">首页</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/get_started/index.html">快速入门</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/manual/index.html">手册</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/blog/index.html">博客</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/team.html">团队介绍</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/about/index.html">关于</a>
+                    
+                    
+                </li>
+                
+            </ul>
+            <ul class="uk-navbar-nav uk-hidden@m">
+                <li><button class="nav-menu" data-uk-icon="icon: menu" uk-toggle="target: #offcanvas-push"></button></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <div id="container">
+    <div style="width: 100%">
+    <div class="hot-area uk-box-shadow-large">
+        <div class="uk-width-1-1 uk-text-center">
+            <div class="polarphp"><img src="/statics/images/polarphp-white.svg" style="height: 60px;"></div>
+        </div>
+        <div class="uk-width-1-1 uk-text-center uk-margin-small">
+            <div class="slogan uk-padding-small">The runtime container of PHP programming language</div>
+        </div>
+        <div class="btn uk-grid-small uk-child-width-expand@s" uk-grid="">
+            <div class="uk-width-1-1 uk-width-1-3@s uk-text-center uk-text-left@s">
+                <button class="uk-button uk-button-default uk-margin-medium-right@s uk-box-shadow-hover-large start-btn" onclick="window.open(" manual")"="">快速入门</button>
+            </div>
+            <div class="uk-width-1-1 uk-width-1-3@s uk-text-center uk-text-left@s">
+                <button class="uk-button uk-button-default github-repo-btn" onclick="window.open(" https:="" github.com="" polarphp="" polarphp")"="">Github仓库</button>
+            </div>
+            <div class="uk-width-1-1 uk-width-1-3@s uk-text-center uk-text-left@s">
+                <button class="uk-button uk-button-default github-repo-btn" onclick="window.open(" https:="" gitee.com="" polarphp="" polarphp")"="">Gitee仓库</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="uk-container features uk-margin-large-top uk-flex uk-flex-column">
+    <div class="uk-flex uk-flex-center uk-margin-medium-bottom uk-visible@s"><div class="title uk-text-center">特性</div></div>
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-grid-divider uk-child-width-expand@s grid" uk-grid="">
+            <div class="uk-width-1-3@s">
+                <div class="uk-flex uk-flex-column uk-width-1-1 feature-item">
+                    <div class="uk-text-center"><img class="icon" src="statics/images/index/features/architecture.svg"></div>
+                    <div class="feature-title uk-text-center uk-margin-small-top">OOP design like JDK</div>
+                    <div class="feature-desc uk-text-center uk-margin-small-top">
+                        We develop polarphp with object oriented programming style, reorganize PHP functions, interface and classes like Java JDK style. To provide developer with a well designed and robust programming interface.
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@s">
+                <div class="uk-flex uk-flex-column uk-width-1-1 feature-item">
+                    <div class="uk-text-center"><img class="icon" src="statics/images/index/features/thread.svg"></div>
+                    <div class="feature-title uk-text-center uk-margin-small-top">Thread safe support</div>
+                    <div class="feature-desc uk-text-center uk-margin-small-top">
+                        Care about multithread environment, almost all of API are thread safe implementation. You can develop multithread application happily with polarphp, use operation system thread mechanism to improve application performance.
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@s">
+                <div class="uk-flex uk-flex-column uk-width-1-1 feature-item">
+                    <div class="uk-text-center"><img class="icon" src="statics/images/index/features/performance.svg"></div>
+                    <div class="feature-title uk-text-center uk-margin-small-top">High performance</div>
+                    <div class="feature-desc uk-text-center uk-margin-small-top">
+                        polarphp develop with modern C++ language and deliver to PHP developer as PHP native extension. We borrow many function and class implemention from JDK, C++ standard library and PHP kernel source code. We implment polarphp as fast as we can.
+                    </div>
+                </div>
+            </div>
+            <div class="uk-visible@s uk-width-1-1@s uk-flex uk-flex-center uk-margin-small" style="padding-top: 10px;padding-bottom: 10px">
+                <hr class="uk-divider-icon uk-width-1-2 uk-margin-small-top">
+            </div>
+            <div class="uk-width-1-3@s">
+                <div class="uk-flex uk-flex-column uk-width-1-1 feature-item">
+                    <div class="uk-text-center"><img class="icon" src="statics/images/index/features/docs.svg"></div>
+                    <div class="feature-title uk-text-center uk-margin-small-top">Complete documentation</div>
+                    <div class="feature-desc uk-text-center uk-margin-small-top">
+                        A good opensource project must be well documented, polarphp supply a complete programming manuals and application programming interface documentations online. You can learn polarphp easily by manuals and get API detail usage in API documentations.
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@s">
+                <div class="uk-flex uk-flex-column uk-width-1-1 feature-item">
+                    <div class="uk-text-center"><img class="icon" src="statics/images/index/features/good.svg"></div>
+                    <div class="feature-title uk-text-center uk-margin-small-top">Implement with C++11</div>
+                    <div class="feature-desc uk-text-center uk-margin-small-top">
+                        polarphp itself is big project develop with C++, We use modern C++ standard when coding and very care about the project architecture, code readability and maintainability. Provide application developer with a reliable framework codebase.
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@s">
+                <div class="uk-flex uk-flex-column uk-width-1-1 feature-item">
+                    <div class="uk-text-center"><img class="icon" src="statics/images/index/features/opensource.svg"></div>
+                    <div class="feature-title uk-text-center uk-margin-small-top">Opensource project</div>
+                    <div class="feature-desc uk-text-center uk-margin-small-top">
+                        polarphp is an opensource project adopt the Apache Licence 2.0 licence and code managed with Github platform, You can develope application with polarphp carefree, Just enjoy it!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="info-list-panel uk-margin-medium-top uk-flex uk-flex-center uk-box-shadow-medium">
+    <div class="uk-child-width-expand@s grid-wrapper" data-uk-grid="">
+        <div class="uk-width-1-1 uk-width-1-2@s info-item">
+            <div class="uk-flex uk-flex-column">
+                <div class="panel-title uk-text-center uk-text-left@s uk-margin-small-top">
+                    <img class="title-icon" src="statics/images/index/infolist/manual.svg">快速入门</div>
+                <ul class="info-list uk-text-left uk-margin-small-top uk-list uk-list-divider">
+                    
+                    <li>没有数据</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-1-1 uk-width-1-2@s info-item">
+            <div class="uk-flex uk-flex-column">
+                <div class="panel-title uk-text-center uk-text-left@s uk-margin-small-top">
+                    <img class="title-icon" src="statics/images/index/infolist/news.svg">最新博客</div>
+                <ul class="info-list uk-text-left uk-margin-small-top uk-list uk-list-divider">
+                    
+                    <li><a href="/2018/07/16/2018-test/index.html">test</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--<div class="sponsors-panel uk-container uk-margin-large-top uk-flex uk-flex-column">
+    <div class="uk-flex uk-flex-center">
+        <div class="sponsor-title uk-flex uk-flex-center">
+            <img src="statics/images/index/sponsors/sponsor.svg">赞助者
+        </div>
+    </div>
+    <div class="uk-margin-medium-top uk-flex uk-flex-center" uk-grid="">
+        <a class="sponsor-logo uk-width-auto"><img src="statics/images/index/sponsors/qcoreteam.svg" style="width:200px;height:60px;padding-top:10px"></a>
+        <a class="sponsor-logo uk-width-auto"><img src="statics/images/index/sponsors/anchnet.png" style="width:200px;height:60px;padding-top:10px"></a>
+    </div>
+    <div class="uk-flex uk-flex-center uk-margin-medium-top">
+        <div class="sponsor-title uk-flex uk-flex-center">
+            <button class="uk-button uk-button-default become-sponsor-btn" onclick="window.location.assign("/about/becomesponsor.html")">如何赞助</button>
+        </div>
+    </div>
+</div>-->
+    <!--<div class="teamwork-panel uk-container uk-margin-medium-top uk-margin-medium-bottom uk-flex uk-flex-column">
+    <div class="uk-flex uk-flex-center">
+        <div class="teamwork-title uk-flex uk-flex-center">
+            <img src="statics/images/index/teamwork/team.svg">开发者
+        </div>
+    </div>
+    <div class="uk-flex uk-flex-center uk-margin-small-top">
+        <div class="uk-margin-medium-top uk-flex uk-flex-center" uk-grid="">
+            <a class="developer-logo uk-width-auto" href="https://github.com/zzusoftboy" target="_blank"><img src="statics/images/index/teamwork/zzu_softboy.jpeg"></a>
+            <a class="developer-logo uk-width-auto" href="https://github.com/yushuailiu" target="_blank"><img src="statics/images/index/teamwork/liushuai.png"></a>
+        </div>
+    </div>
+    <div class="sponsor-title uk-flex uk-flex-center uk-margin-medium-top">
+        <button class="uk-button uk-button-default become-developer-btn" onclick="window.location.assign("/about/becomedeveloper.html")">如何参与开发</button>
+    </div>
+</div>-->
+    <div class="partner-panel uk-container uk-margin-large-top uk-flex uk-flex-column">
+    <div class="uk-flex uk-flex-center">
+        <div class="partner-title uk-flex uk-flex-center">
+            <img src="statics/images/index/partner/partner.svg">合作伙伴
+        </div>
+    </div>
+    <div class="uk-margin-medium-top uk-flex uk-flex-center" uk-grid="">
+        <a class="partner-logo uk-width-auto"><img src="statics/images/index/partner/osc.svg"></a>
+        <a class="partner-logo uk-width-auto"><img src="statics/images/index/partner/gitee.svg"></a>
+        <a class="partner-logo uk-width-auto"><img src="statics/images/index/partner/hacklogo.svg"></a>
+    </div>
+    <div class="uk-flex uk-flex-center uk-margin-medium-top">
+        <div class="partner-title uk-flex uk-flex-center">
+            <button class="uk-button uk-button-default become-partner-btn" onclick="window.location.assign(" about="" becomepartner.html")"="">成为合作伙伴</button>
+        </div>
+    </div>
+</div>
+    <div class="linkers-panel uk-container uk-margin-large-top uk-flex uk-flex-column">
+    <div class="uk-flex uk-flex-center">
+        <div class="linker-title uk-flex uk-flex-center">
+            <img src="statics/images/index/links/link.svg">友情链接
+        </div>
+    </div>
+    <div class="uk-margin-medium-top uk-grid-collapse uk-child-width-expand@s uk-flex uk-flex-center" data-uk-grid="">
+        <ul class="uk-text-center uk-text-left@s">
+            <li><a href="http://unicorn.360.cn/" target="_blank">360 UnicornTeam</a></li>
+        </ul>
+        <ul class="uk-text-center uk-text-left@s">
+            <li><a href="https://www.75team.com/" target="_blank">75team</a></li>
+        </ul>
+        <ul class="uk-text-center uk-text-left@s">
+            <li><a href="https://thinkjs.org/" target="_blank">ThinkJS Project</a></li>
+        </ul>
+        <ul class="uk-text-center uk-text-left@s">
+            <li><a href="http://www.0xroot.cn/" target="_blank">0xroot</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+    <footer id="footer-wrapper">
+    <div class="footer uk-text-center">
+        <div>Copyright © 2018 ZZU_SOFTBOY</div>
+        <div>
+            <a href="http://www.miitbeian.gov.cn/" target="_Blank">ICP: BJ 17044371-2</a>
+        </div>
+        <div>
+            website version 0.1.0 &nbsp;powerby <a href="https://gitee.com/" target="_blank">gitee</a>
+        </div>
+    </div>
+</footer>
+
+    <div id="offcanvas-push" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar" id="sidebar">
+            <button class="uk-offcanvas-close" type="button" uk-close=""></button>
+            <div class="menu-container">
+                
+<ul class="uk-text-left uk-width-1-1">
+    
+    <li class="uk-width-1-1"><a href="/">首页</a></li>
+    
+    
+    <li class="uk-width-1-1"><a href="/get_started/index.html">快速入门</a></li>
+    
+    
+    <li class="uk-width-1-1"><a href="/manual/index.html">手册</a></li>
+    
+    
+    <li class="uk-width-1-1"><a href="/blog/index.html">博客</a></li>
+    
+    
+    <li class="uk-width-1-1"><a href="/team.html">团队介绍</a></li>
+    
+    
+    <li class="uk-width-1-1"><a href="/about/index.html">关于</a></li>
+    
+    
+</ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
